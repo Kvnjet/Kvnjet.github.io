@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+      <h1>Ordenamientos: Kevin Alonso Espinoza Barrantes</h1>
+      
+      <h2>•	Burbuja</h2>
+      <p>Es un sencillo algoritmo de ordenamiento, su función es ir pasando casilla por casilla del vector solamente para saber los valores que están impresos en cada casilla. Como tal no se tienen una fecha exacta de cuando se realizo este método.
+        En 1956 se encontró un articulo que se llamo "ordenamiento por intercambio";</p>
+      <p>El ordenamiento de burbuja tiene una complejidad n² igual que ordenamiento por selección. Cuando una lista ya está ordenada, a diferencia del ordenamiento por inserción que pasará por la lista una vez y encontrará que no hay necesidad de intercambiar las posiciones de los elementos, el método de ordenación por burbuja está forzado a pasar por dichas comparaciones.</p>
+      <h2>•	Selección</h2>
+      <p>Su funcionamiento es el siguiente:</p>
+
+      <p>Buscar el mínimo elemento de la lista</p>
+      <p>Intercambiarlo con el primero</p>
+        <p>Buscar el siguiente mínimo en el resto de la lista</p>
+        <p>Intercambiarlo con el segundo.</p>
+      <p>Este algoritmo mejora ligeramente el algoritmo de la burbuja. En el caso de tener que ordenar un vector de enteros, esta mejora no es muy sustancial</p>
+      <h2>•	Inserción</h2>
+      <p>aunque sigue siendo n2
+      Funciona de una manera ligeramente diferente. Siempre mantiene una sublista ordenada en las posiciones inferiores de la lista. Cada ítem nuevo se “inserta” de vuelta en la sublista previa de manera que la sublista ordenada sea un ítem más larga</p>
+      <p><p>Inicialmente, se tiene un solo elemento que, obviamente, es un conjunto ordenado. Después, cuando hay Q elementos ordenados de menor a mayor se toma el elemento Q + 1 y se compara con todos los elementos ya ordenados, deteniéndose cuando se encuentra un elemento menor</p></p>
+      <h2>•	Shell</h2>
+      <p>La ordenación de Shell pertenece a los métodos de clasificación avanzados, nombrado así en honor del ingeniero y matemático estadounidense Donald Shell que la propuso en 1959. </p>
+      <p>Este método utiliza una segmentación entre todos los datos. Funciona comparando los elementos que estén distantes, la distancia entre comparaciones decrece conforme el algoritmo se ejecuta hasta la ultima fase, en la cual se comparan los elementos a la par.</p>
+      <p>El Algoritmo Shell sort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones. Esto permite que un elemento haga "pasos más grandes" hacia su posición esperada.</p>
+      <p>Su implementación original, requiere n2 comparaciones e intercambios en el peor caso. Un cambio menor presentado en el libro de V. Pratt produce una implementación con un rendimiento de n log2 n en el peor caso</p>
+      <h2>•	Quicksort</h2>
+      <p>Fue desarrollado en el año 1960 por Charles Antony Richard Hoare mientras se encontraba en la Unión Soviética, en la Universidad Estatal de Moscú.</p>
+      <p>Elegir un elemento del conjunto de elementos a ordenar, al que llamaremos pivote.</p>
+      <p>Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores.</p>
+      <p>La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.</p>
+      <p>Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. Una vez terminado este proceso todos los elementos estarán ordenados.</p>
+      <h2>•	Radix</h2>
+      <p>Es un algoritmo de ordenamiento 
+        que ordena enteros procesando 
+        sus dígitos de forma 
+        individual. Como los enteros 
+        pueden representar cadenas de 
+        caracteres</p>
+      <p>Digito menos significativo 
+        (LSD) 
+        ó
+        Digito significativo (MSD)</p>
+      <p>es muy rápido en comparación 
+        con otros algoritmos de ordenación</p>
+      <h2>•	Shake</h2>
+      <p>Es una mejora del método de la burbuja en la cual el proceso se realiza tanto desde la primera posición a la última del arreglo como en sentido inverso, evitando así que los elementos más pequeños tarden un mayor tiempo en "ascender" a las posiciones superiores.</p>
+      <p>el algoritmo sólo efectuara n comparaciones. Por lo tanto la complejidad en el caso óptimo es en n.</p>
+      <h2>•	Merge</h2>
+      <p>Ordenamiento Merge fue desarrollado en 1945 por John Von Neumman.</p>
+      <p>Si la longitud de la lista es 0 o 1, entonces ya está ordenada</p>
+      <p>Dividir la lista desordenada en dos sublistas de aproximadamente la mitad del tamaño.</p>
+      <p>Ordenar cada sublista recursivamente aplicando el ordenamiento por mezcla.</p>
+      <p>Mezclar las dos sublistas en una sola lista ordenada.</p>
+      <p>merge sort es un ordenamiento estable, paraleliza mejor, y es más eficiente manejando medios secuenciales de acceso lento. Merge sort es a menudo la mejor opción para ordenar una lista enlazada</p>
+      <h2>•	BusquedaBinaria</h2>
+      <p>Compara el valor con el elemento en el medio del array, si no son iguales, la mitad en la cual el valor no puede estar es eliminada y la búsqueda continúa en la mitad restante hasta que el valor se encuentre.</p>
+      <p>La búsqueda binaria es computada en el peor de los casos en un tiempo logarítmico, realizando log n comparaciones, donde n es el número de elementos del arreglo y log es el logaritmo.</p>
+      <p>En 1946, John Mauchly mencionó por primera vez la búsqueda binaria como parte de Moore School Lectures, el primer conjunto de conferencias relacionado con las computadoras. Las siguientes publicaciones mencionaban que la búsqueda binaria solo funcionaba en arreglos cuya longitud fuese de uno menos que una potencia de dos hasta 1960, cuando Derrick Henry Lehmer público un algoritmo de búsqueda binaria que funcionaba en todos los arreglos ordenados. En 1962, Hermann Bottenbruch presentó en ALGOL 60 una implementación del algoritmo de búsqueda binaria en el cual colocaba la comparación de igualdad en el final del algoritmo</p>
+      <p>El rendimiento de la búsqueda binaria puede ser analizada reduciendo el algoritmo a un árbol binario de búsqueda</p>
+      <h2>•	BusquedaSecuencial</h2>
+      <p>La búsqueda secuencial consiste en recorrer secuencialmente un array desde el primer elemento hasta el último y comprobar si alguno de los elementos del array contiene el vector buscado, es decir, comparar cada elemento del array con el valor buscado. </p>
+      <p>El elemento buscado estará cerca de la mitad. Necesitando en
+        promedio, la mitad de comparaciones que de elementos. Por lo tanto, la velocidad de ejecución depende
+        linealmente del tamaño del arreglo
+        </p>
+      <p>La búsqueda secuencial requiere, para el peor de los casos, cuando el elemento a buscar es el último o no se encuentra, recorrer todo el vector y realizar un número de comparaciones igual al tamaño del vector</p>
+    </body>
+</html>
